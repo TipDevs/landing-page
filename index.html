@@ -3,76 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Landing Page</title>
 </head>
 <body>
     <header>
         <div class="logo">Header Logo</div>
-        <nav class="nav-link">
-            <a href="#">header link one</a>
-            <a href="#">header link two</a>
-            <a href="#">header link three</a>
+        <nav >
+            <a href="#team" class="nav-link">Meet the team</a>
+            <a href="#about" class="nav-link">About us</a>
+            <a href="#join" class="nav-link">Join us</a>
         </nav>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-text">
-                <h1>This website is<br/> awesome</h1>
-                <p>This website has some subtext that goes here under the<br>
-                     main title. It's a smaller font and the color is lower<br>
+                <h1>This website is awesome</h1>
+                <p>This website has some subtext that goes here under the
+                     main title. It's a smaller font and the color is lower
                       contrast.</p>
                 <button>Sign up</button>
             </div>
-            <div class="hero-img">
-                this is a placeholder for an image
+            <img src="./images/tipdevs.jpg" alt="" class="hero-img">
+        </section>
+
+        <section class="info" id="team">
+            <h2 class="info-header">Our Services</h2>
+            <div class="card-container">
+                <div class="info-card">
+                    <div class="info-img"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+    
+                <div class="info-card">
+                    <div class="info-img"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+    
+                <div class="info-card">
+                    <div class="info-img"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+    
+                <div class="info-card">
+                    <div class="info-img"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
             </div>
         </section>
 
-        <section class="info">
-            <h2 class="info-header">Some random information</h2>
-            <div class="info-card">
-                <div class="info-img"></div>
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-
-            <div class="info-card">
-                <div class="info-img"></div>
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-
-            <div class="info-card">
-                <div class="info-img"></div>
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-
-            <div class="info-card"></div>
-                <div class="info-img"></div>
-                <p>this is some subtext under an illustration or image</p>
+        <section class="quote-section" id="about">
+            <div class="quote-container">
+                <p class="quote">
+                    This is an inspiring quote or a testimonial
+                     from a customer. Maybe it's just filling up space,
+                      or maybe people will actually read it. who knows?
+                       All I know is that it looks nice.
+                </p>
+    
+                <p class="author">
+                    -Thor, God of Thunder
+                </p>
             </div>
         </section>
 
-        <section class="quote-section">
-            <p class="quote">
-                This is an inspiring quote or a testimonial
-                 from a customer. Maybe it's just filling up space,
-                  or maybe people will actually read it. who knows?
-                   All I know is that it looks nice.
-            </p>
-
-            <p class="Author">
-                -Thor, God of Thunder
-            </p>
-        </section>
-
-        <section class="call-to-action">
-            <div class="text">
-                <p>Call to action! It's time!</p>
-                <p>Sign up for our product by clicking
-                     that button right over there!</p>
+        <section class="call-to-action" id="join">
+            <div class="container">
+                <div class="text">
+                    <p class="big">Call to action! It's time!</p>
+                    <p class="small">Sign up for our product by clicking
+                         that button right over there!</p>
+                </div>
+                <button>Sign up</button>
             </div>
-            <button>Sign up</button>
         </section>
     </main>
 
